@@ -5,6 +5,7 @@ import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Cookies from 'js-cookie'; // Import Cookies library for managing cookies
 
+
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -17,41 +18,36 @@ const Login = () => {
         password,
       });
 
-      // Assuming the token is returned in the response
       const token = response.data.token;
 
-      // Store the token in session storage
       sessionStorage.setItem('token', token);
+      Cookies.set('token', token, { expires: 7 });
 
-      // Store the token in cookies with expiry date
-      Cookies.set('token', token, { expires: 7 }); // Token expires in 7 days
-
-      // Reset form fields
       setEmail('');
       setPassword('');
 
-      // Display success toast message
       toast.success('Login successful');
+
+      // Redirect user to home page after 5 seconds
+      setTimeout(() => {
+        window.location.href = '/home'; // Update '/home' with your desired route
+      }, 5000); // 5000 milliseconds (5 seconds) delay
     } catch (error) {
       if (error.response) {
         if (error.response.status === 401) {
-          // Display authentication error toast message
           toast.error('Wrong email or password');
         } else {
-          // Display other error toast message from server response
           toast.error(error.response.data.error || 'An error occurred');
         }
       } else {
-        // Display generic error toast message
         toast.error('An error occurred');
       }
     }
   };
-
   return (
     <div className="min-h-screen bg-gray-100 flex justify-center items-center">
       <div className="bg-white p-8 rounded shadow-md w-96">
-        <h2 className="text-2xl font-bold mb-4">Login</h2>
+        <h2 className="text-2xl font-bold mb-4">Sign In</h2>
         <form>
           <div className="mb-4">
             <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
