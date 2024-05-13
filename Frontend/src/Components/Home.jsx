@@ -1,9 +1,8 @@
-// LandingPage.jsx
 import React from 'react';
 
 const LandingPage = () => {
   return (
-    <div className="min-h-screen bg-gray-100 flex flex-col justify-center items-center">
+    <div className="min-h-screen bg-blue-150 flex flex-col justify-center items-center">
       {/* First Row */}
       <div className="flex justify-center items-center mb-8">
         {/* Services Section */}
