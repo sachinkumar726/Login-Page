@@ -4,9 +4,9 @@ const LandingPage = () => {
   return (
     <div className="min-h-screen bg-blue-150 flex flex-col justify-center items-center">
       {/* First Row */}
-      <div className="flex justify-center items-center mb-8">
+      <div className="flex flex-col md:flex-row justify-center items-center mb-8">
         {/* Services Section */}
-        <div className="bg-white p-8 shadow-lg rounded-lg mr-4 w-80">
+        <div className="bg-white p-8 shadow-lg rounded-lg mb-4 md:mb-0 md:mr-4 w-80">
           <h2 className="text-xl font-bold mb-4">Services</h2>
           <p className="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan nisi id libero dictum, eget luctus elit fermentum.</p>
         </div>
@@ -19,9 +19,9 @@ const LandingPage = () => {
       </div>
 
       {/* Second Row */}
-      <div className="flex justify-center items-center">
+      <div className="flex flex-col md:flex-row justify-center items-center">
         {/* Contact Us Section */}
-        <div className="bg-white p-8 shadow-lg rounded-lg mr-4 w-80">
+        <div className="bg-white p-8 shadow-lg rounded-lg mb-4 md:mb-0 md:mr-4 w-80">
           <h2 className="text-xl font-bold mb-4">Contact Us</h2>
           <p className="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan nisi id libero dictum, eget luctus elit fermentum.</p>
         </div>
@@ -32,7 +32,12 @@ const LandingPage = () => {
           <p className="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan nisi id libero dictum, eget luctus elit fermentum.</p>
         </div>
       </div>
+      <div>
+      
+      </div>
     </div>
+
+  
   );
 };
 
