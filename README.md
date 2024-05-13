@@ -44,7 +44,7 @@ Users can sign up, sign in, and their session is managed upon successful login.
 4. Run `npm start` to start the backend server.
 5. Navigate to the frontend directory and run `npm install` to install frontend dependencies.
 6. Run `npm start` to start the frontend server.
-7. Access the application in your browser at `http://localhost:3000`.
+7. Access the application in your browser at `http://localhost:5000`.
 
 ---
 
