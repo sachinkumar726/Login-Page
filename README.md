@@ -1,14 +1,14 @@
 User Authentication System
 
 ## Description:
-This project implements a user authentication system using ReactJS for the frontend and Node.js with Express.js and MongoDB for the backend.
+This project implements a user authentication system using ReactJS+ vite for the frontend and Node.js with Express.js and MongoDB for the backend.
 The frontend utilizes Tailwind CSS for UI styling and Toast Master for displaying notifications.
 Users can sign up, sign in, and their session is managed upon successful login.
 
 ---
 
 ## File Structure:
-- **frontend:** Contains the ReactJS frontend code.
+- **frontend:** Contains the ReactJS + vite frontend code.
 - **backend:** Contains the Node.js with Express.js backend code.
 
 ---
@@ -16,7 +16,8 @@ Users can sign up, sign in, and their session is managed upon successful login.
 ## Frontend:
 - **UI Framework:** Tailwind CSS
 - **Notification System:** Toast Master
-- **Pages:**
+- **Pages:*
+    Home page
   - Sign Up Page
   - Sign In Page
 
@@ -31,7 +32,7 @@ Users can sign up, sign in, and their session is managed upon successful login.
 ## Features:
 - User Registration: Users can create a new account by providing a username, email, and password. Basic form validation is implemented.
 - User Login: Users can log in using their email and password. Session-based authentication is used to manage user sessions.
-- User Profile Page: After login, users are redirected to a profile page displaying their username and email. This page is only accessible to logged-in users.
+- User Profile Page: After login, users are redirected to a Hom page.This page is only accessible to logged-in users.
 - Logout Functionality: Users can log out, ending their session.
 - Error Handling: Proper error handling is implemented for scenarios such as duplicate users and incorrect passwords.
 
@@ -39,11 +40,11 @@ Users can sign up, sign in, and their session is managed upon successful login.
 
 ## How to Run:
 1. Clone the repository.
-2. Navigate to the backend directory and run `npm install` to install backend dependencies.
+2. Navigate to the backend directory and run `npm install` to install backend dependencies and 'npm install express'.
 3. Start MongoDB server.
-4. Run `npm start` to start the backend server.
+4. Run `node server.js` to start the backend server.
 5. Navigate to the frontend directory and run `npm install` to install frontend dependencies.
-6. Run `npm start` to start the frontend server.
+6. Run `npm start or npm run dev` to start the frontend server.
 7. Access the application in your browser at `http://localhost:5000`.
 
 ---
